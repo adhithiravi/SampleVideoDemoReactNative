@@ -5,29 +5,29 @@ import Video from 'react-native-video'
 
 export default class VideoComponent extends React.Component {
 
-	renderVideo () {
-			return(
-				<Video
+  renderVideo () {
+      return(
+        <Video
           source={require('./assets/Piano_Playing_Close.mp4')}
-					style={{ width: 800, height: 800 }}
-					muted={true}
-					repeat={true}
-					resizeMode={"cover"}
-					volume={1.0}
-					rate={1.0}
-					ignoreSilentSwitch={"obey"}
+          style={{ width: 800, height: 800 }}
+          muted={true}
+          repeat={true}
+          resizeMode={"cover"}
+          volume={1.0}
+          rate={1.0}
+          ignoreSilentSwitch={"obey"}
 
-				/>
-			)
-	}
+        />
+      )
+  }
 
-	render () {
-		return (
-			<View>
-				{this.renderVideo()}
-			</View>
-		)
-	}
+  render () {
+    return (
+      <View>
+        {this.renderVideo()}
+      </View>
+    )
+  }
 }
 
 // Later on in your styles..
@@ -43,5 +43,5 @@ var styles = StyleSheet.create({
 
 // Prop type warnings
 VideoComponent.propTypes = {
-	//mute: PropTypes.bool.isRequired
+  //mute: PropTypes.bool.isRequired
 }
