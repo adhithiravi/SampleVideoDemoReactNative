@@ -17,7 +17,7 @@ export default class VideoComponent extends React.Component {
           resizeMode="cover"
           shouldPlay
           isLooping={false}
-          style={{ width: 500, height: 500 }}
+          style={{ width: 300, height: 300 }}
         />
 			)
 	}
